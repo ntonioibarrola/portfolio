@@ -5,7 +5,7 @@ import MenuIcon from '../assets/menu.svg';
 
 function Navbar() {
   return (
-    <div className='fixed h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-12 text-base text-white'>
+    <div className='fixed h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-6 text-base text-white md:p-12'>
       <div className='hidden h-full w-full items-center justify-between lg:flex'>
         <div className='flex cursor-pointer gap-12'>
           <div>Home</div>
