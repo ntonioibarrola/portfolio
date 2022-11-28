@@ -1,17 +1,27 @@
+import LinkedInIcon from '../assets/linkedin.svg';
+import GitHubIcon from '../assets/github.svg';
+import ResumeIcon from '../assets/resume.svg';
+import MenuIcon from '../assets/menu.svg';
+
 function Navbar() {
   return (
-    <div className='text-md fixed flex h-24 w-full max-w-screen-5xl items-center justify-between bg-periwinkle-100 p-12 text-white'>
-      <div className='flex cursor-pointer gap-12'>
-        <div>Home</div>
-        <div>Skills</div>
-        <div>Projects</div>
-        <div>About</div>
-        <div>Contact</div>
+    <div className='fixed h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-12 text-base text-white'>
+      <div className='hidden h-full w-full items-center justify-between lg:flex'>
+        <div className='flex cursor-pointer gap-12'>
+          <div>Home</div>
+          <div>Skills</div>
+          <div>Projects</div>
+          <div>About</div>
+          <div>Contact</div>
+        </div>
+        <div className='flex cursor-pointer gap-12'>
+          <img src={LinkedInIcon} width='45px' alt='LinkedIn Logo' />
+          <img src={GitHubIcon} width='45px' alt='GitHub Logo' />
+          <img src={ResumeIcon} width='45px' alt='Resume Logo' />
+        </div>
       </div>
-      <div className='flex cursor-pointer gap-12'>
-        <div>LinkedIn Icon</div>
-        <div>GitHub Icon</div>
-        <div>Resume Icon</div>
+      <div className='flex h-full w-full cursor-pointer items-center justify-end lg:hidden'>
+        <img src={MenuIcon} width='45px' alt='Menu Logo' />
       </div>
     </div>
   );
