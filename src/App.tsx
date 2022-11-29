@@ -3,9 +3,11 @@ import Navbar from './components/Navbar.js';
 
 function App() {
   return (
-    <div className='flex justify-center'>
-      <Navbar />
-      <Hero />
+    <div>
+      <div className='flex max-w-screen-5xl justify-center bg-periwinkle-100 text-white'>
+        <Navbar />
+        <Hero />
+      </div>
     </div>
   );
 }
