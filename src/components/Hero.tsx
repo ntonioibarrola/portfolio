@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className='h-screen w-full'>
+    <section className='h-screen w-full max-w-screen-5xl'>
       <div className='absolute h-screen w-full'>
         <div className='m-auto flex h-screen w-11/12 flex-col items-center justify-start pt-[30vh] text-center md:mx-16 md:w-auto md:items-start md:justify-center md:p-0 md:text-start [@media(min-width:1895px)]:mx-32 [@media(min-width:2150px)]:mx-64'>
           <div className='fluid-text-6xl'>

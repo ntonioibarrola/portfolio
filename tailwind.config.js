@@ -13,6 +13,7 @@ module.exports = {
         periwinkle: {
           100: '#7DADE4',
           200: '#4550AE',
+          300: '#323646',
         },
       },
       fontFamily: {
