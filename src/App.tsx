@@ -8,6 +8,8 @@ function App() {
         <Navbar />
         <Hero />
       </div>
+      <section className='relative z-10 h-screen w-full bg-white' />
+      <section className='relative z-10 h-screen w-full bg-red-500' />
     </div>
   );
 }

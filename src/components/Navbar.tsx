@@ -24,7 +24,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className='fixed z-10 h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-6 text-base md:p-12'>
+    <nav className='fixed z-20 h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-6 text-base md:p-12'>
       <div className='hidden h-full w-full items-center justify-between lg:flex'>
         <div className='flex cursor-pointer gap-12'>
           <div>Home</div>
