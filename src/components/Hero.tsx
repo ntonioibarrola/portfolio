@@ -1,8 +1,8 @@
 function Hero() {
   return (
-    <section className='h-screen w-full max-w-screen-5xl'>
-      <div className='absolute z-10 h-screen w-full'>
-        <div className='m-auto flex h-screen w-11/12 flex-col items-center justify-start pt-[30vh] text-center md:mx-16 md:w-auto md:items-start md:justify-center md:p-0 md:text-start [@media(min-width:1895px)]:mx-32 [@media(min-width:2150px)]:mx-64'>
+    <section className='h-screen w-full'>
+      <div className='absolute left-1/2 right-1/2 z-10 h-screen w-full max-w-screen-4xl -translate-x-1/2'>
+        <div className='m-auto flex h-screen w-11/12 flex-col items-center justify-start pt-[30vh] text-center md:ml-24 md:mr-16 md:w-auto md:items-start md:justify-center md:p-0 md:text-start'>
           <div className='fluid-text-6xl'>
             <p>
               Hi, I'm&nbsp;
@@ -16,9 +16,9 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className='fixed z-0 flex h-screen w-full'>
+      <div className='fixed left-1/2 right-1/2 z-0 flex h-screen w-full max-w-screen-4xl -translate-x-1/2'>
         <div className='h-screen md:w-1/3' />
-        <div className="h-screen w-full bg-[url('./assets/background.png')] bg-contain bg-right-bottom bg-no-repeat 4xl:mr-32" />
+        <div className="h-screen w-full bg-[url('./assets/background.png')] bg-contain bg-right-bottom bg-no-repeat" />
       </div>
     </section>
   );

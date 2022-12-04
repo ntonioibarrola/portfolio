@@ -24,11 +24,11 @@ function Navbar() {
   ];
 
   return (
-    <nav className='fixed z-20 h-24 w-full max-w-screen-5xl bg-periwinkle-100 p-6 text-base md:p-12'>
-      <div className='hidden h-full w-full items-center justify-between lg:flex'>
-        <li className='flex gap-12 no-underline'>
+    <nav className='fixed z-20 h-24 w-full bg-periwinkle-100 p-6 text-base md:p-12'>
+      <div className='m-auto hidden h-full w-full max-w-screen-4xl items-center justify-between lg:flex'>
+        <ul className='flex gap-12 no-underline'>
           {['Home', 'Skills', 'Projects', 'About', 'Contact'].map((string) => (
-            <ul key={string} className='cursor-pointer'>
+            <li key={string} className='cursor-pointer'>
               <a className='group relative block'>
                 {string}
                 <span
@@ -36,9 +36,9 @@ function Navbar() {
                   before:left-0 before:h-full before:w-0 before:bg-[url("./assets/zigzag.svg")] before:duration-500 group-hover:before:w-full'
                 />
               </a>
-            </ul>
+            </li>
           ))}
-        </li>
+        </ul>
         <ul className='flex gap-12'>
           {hyperlinks.map((_, index) => (
             <li
