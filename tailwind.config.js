@@ -53,6 +53,20 @@ module.exports = {
       gridTemplateColumns: {
         ruler: 'repeat(12, 1fr)',
       },
+      gridRowEnd: {
+        7: '7',
+        8: '8',
+        9: '9',
+      },
+      maxWidth: {
+        'screen-5xl': '2560px',
+      },
+      screens: {
+        '2.5xl': '1895px',
+        '3xl': '1920px',
+        '4xl': '2150px',
+        '5xl': '2560px',
+      },
       animation: {
         wave: 'wave 2s infinite',
         squiggle: 'squiggle 0.25s steps(2) infinite',
@@ -73,14 +87,11 @@ module.exports = {
           '100%': { transform: 'skew(1.5deg,.2deg) translate(0,-1.5px)' },
         },
       },
-      maxWidth: {
-        'screen-5xl': '2560px',
+      transitionTimingFunction: {
+        popup: 'ease',
       },
-      screens: {
-        '2.5xl': '1895px',
-        '3xl': '1920px',
-        '4xl': '2150px',
-        '5xl': '2560px',
+      transitionDuration: {
+        popup: '250ms',
       },
     },
   },

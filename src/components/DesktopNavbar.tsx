@@ -5,7 +5,7 @@ const DesktopNavbar: FC = () => {
   const { date, time } = useDateTime();
 
   return (
-    <nav className='fixed flex h-auto w-full justify-between border-b-1 border-solid border-charcoal bg-offwhite-100 px-5 text-charcoal'>
+    <nav className='flex h-auto w-full justify-between border-b-1 border-solid border-charcoal bg-offwhite-100 px-5 text-charcoal'>
       <div>Antonio Ibarrola</div>
       <div className='flex gap-2'>
         <div>{time}</div>

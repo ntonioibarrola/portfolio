@@ -5,7 +5,7 @@ import CloseIcon from '../assets/close-icon';
 
 const Window: FC<{ children: ReactNode; title: string }> = ({ children, title }) => {
   return (
-    <div className='relative h-[40rem] w-[40rem] rounded-retro border-1 border-solid border-charcoal bg-offwhite-100 drop-shadow-[6px_6px_0px_rgba(0,_0,_0,_0.15)]'>
+    <div className='relative h-full w-full rounded-retro border-1 border-solid border-charcoal bg-offwhite-100 drop-shadow-[6px_6px_0px_rgba(0,_0,_0,_0.15)]'>
       <nav className='absolute flex h-[25px] w-full items-center justify-between px-[5px]'>
         <div>{title}</div>
         <div className='flex gap-1'>

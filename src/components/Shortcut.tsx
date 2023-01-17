@@ -6,7 +6,9 @@ const Shortcut: FC<{ children: ReactNode; source: string }> = ({ children, sourc
       <div className='h-12 w-12'>
         <img src={source} />
       </div>
-      <div className='rounded-retro bg-froly-100 px-2 text-center leading-tight'>{children}</div>
+      <div className='rounded-retro bg-froly-100 px-2 font-w95fa leading-tight tracking-wider'>
+        {children}
+      </div>
     </div>
   );
 };
