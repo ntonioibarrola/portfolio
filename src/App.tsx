@@ -1,14 +1,12 @@
-import DesktopNavbar from './components/DesktopNavbar';
+import Navbar from './components/Navbar';
 import Window from './components/Window';
 import Shortcut from './components/Shortcut';
 import AboutMe from './components/AboutMe';
-import Hero from './components/Hero.js';
-import Navbar from './components/Navbar.js';
 
 function App() {
   return (
     <div className='h-screen w-screen cursor-default'>
-      <DesktopNavbar />
+      <Navbar />
       <main className='grid h-[calc(100%-25px)] w-full grid-cols-[1fr_minmax(320px,_960px)_1fr] grid-rows-[1fr,_1.75rem,_auto,_1.75rem] bg-froly-200'>
         <div className='col-start-2 col-end-3 row-start-1 row-end-5 grid h-full w-full grid-cols-[2rem,_2rem,_20rem,_1.5rem,_3.5rem,_1.5rem_1fr,_2rem,_2rem] grid-rows-[4rem,_8rem,_22rem,_1.5rem,_3rem,_3rem,_1fr,_3rem,_4rem] py-7 px-3'>
           <div className='col-start-3 col-end-6 row-start-2 row-end-6'>

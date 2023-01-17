@@ -4,8 +4,8 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
-    './src/pages/**/*.{vue,js,ts,jsx,tsx}',
-    './src/components/**/*.{vue,js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -44,28 +44,13 @@ module.exports = {
         pointer: 'url(/src/assets/cursor-pointer.svg), pointer',
       },
       fontFamily: {
-        gingerbold: ['F37 Ginger', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
         sysfont: ['FA Sysfont C', 'sans-serif'],
         w95fa: ['W95FA', 'sans-serif'],
-        arial: ['Arial', 'sans-serif'],
-      },
-      gridTemplateColumns: {
-        ruler: 'repeat(12, 1fr)',
       },
       gridRowEnd: {
         7: '7',
         8: '8',
         9: '9',
-      },
-      maxWidth: {
-        'screen-5xl': '2560px',
-      },
-      screens: {
-        '2.5xl': '1895px',
-        '3xl': '1920px',
-        '4xl': '2150px',
-        '5xl': '2560px',
       },
       animation: {
         wave: 'wave 2s infinite',

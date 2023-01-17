@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
-import MinimizeIcon from '../assets/minimize-icon';
-import ScreenIcon from '../assets/screen-icon';
-import CloseIcon from '../assets/close-icon';
+import MinimizeIcon from '../assets/button-minimize-icon';
+import ScreenIcon from '../assets/button-screen-icon';
+import CloseIcon from '../assets/button-close-icon';
 
 const Window: FC<{ children: ReactNode; title: string }> = ({ children, title }) => {
   return (
