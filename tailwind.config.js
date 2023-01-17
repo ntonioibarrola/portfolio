@@ -9,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        retro: '0.175rem',
+      },
+      borderWidth: {
+        1: '1px',
+        5: '5px',
+      },
       colors: {
         periwinkle: {
           100: '#7DADE4',
@@ -27,11 +34,21 @@ module.exports = {
         },
         carnation: '#F55261',
         dandelion: '#FFC328',
-        froly: '#F582A1',
+        froly: {
+          100: '#FABFCD',
+          200: '#EE7293',
+        },
+      },
+      cursor: {
+        default: 'url(/src/assets/cursor-default.svg), auto',
+        pointer: 'url(/src/assets/cursor-pointer.svg), pointer',
       },
       fontFamily: {
         gingerbold: ['F37 Ginger', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        sysfont: ['FA Sysfont C', 'sans-serif'],
+        w95fa: ['W95FA', 'sans-serif'],
+        arial: ['Arial', 'sans-serif'],
       },
       gridTemplateColumns: {
         ruler: 'repeat(12, 1fr)',
