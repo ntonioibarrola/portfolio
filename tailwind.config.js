@@ -79,6 +79,18 @@ module.exports = {
         popup: '250ms',
       },
     },
+    keyframes: {
+      bounce: {
+        '50%': {
+          transform: 'translateY(-10%)',
+          'animation-timing-function': 'cubic-bezier(0.8,0,1,1)',
+        },
+        '0%, 100%': {
+          transform: 'none',
+          'animation-timing-function': 'cubic-bezier(0,0,0.2,1)',
+        },
+      },
+    },
   },
   plugins: [
     require('tailwindcss-fluid-type')({

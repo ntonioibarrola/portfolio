@@ -17,10 +17,13 @@ const AboutMe: FC = () => {
       </div>
       <div className='h-auto w-full text-justify font-w95fa'>
         <p>
-          Hello! I'm <span className='font-sysfont text-froly-200'>Antonio Ibarrola</span>, a recent
-          grad from UCSC with a knack for web development. I take pleasure in learning about the
-          ins-and-outs of web development and its new technologies, and I enjoy the subtleties in
-          websites like micro-animations and cohesive color themes.
+          Hello! I'm{' '}
+          <span className='inline-block font-sysfont text-froly-200 hover:animate-squiggle'>
+            Antonio Ibarrola
+          </span>
+          , a recent grad from UCSC with a knack for web development. I take pleasure in learning
+          about the ins-and-outs of web development and its new technologies, and I enjoy the
+          subtleties in websites like micro-animations and cohesive color themes.
         </p>
         <br />
         <p>
