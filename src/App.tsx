@@ -4,6 +4,10 @@ import Shortcut from './components/Shortcut';
 import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
 import MyProjects from './components/MyProjects';
+import AboutMeIcon from './assets/about-icon.png';
+import MySkillsIcon from './assets/skills-icon.png';
+import MyProjectsIcon from './assets/projects-icon.png';
+import ContactMeIcon from './assets/contact-icon.png';
 
 function App() {
   return (
@@ -32,10 +36,10 @@ function App() {
         </div>
         <div className='col-start-3 col-end-4 row-start-1 row-end-5 flex justify-end p-7'>
           <div className='space-y-6'>
-            <Shortcut source='src/assets/about-icon.png'>About Me</Shortcut>
-            <Shortcut source='src/assets/skills-icon.png'>My Skills</Shortcut>
-            <Shortcut source='src/assets/projects-icon.png'>My Projects</Shortcut>
-            <Shortcut source='src/assets/contact-icon.png'>Contact Me</Shortcut>
+            <Shortcut source={AboutMeIcon}>About Me</Shortcut>
+            <Shortcut source={MySkillsIcon}>My Skills</Shortcut>
+            <Shortcut source={MyProjectsIcon}>My Projects</Shortcut>
+            <Shortcut source={ContactMeIcon}>Contact Me</Shortcut>
           </div>
         </div>
         {/* <div className='col-start-2 col-end-2 row-start-2 row-end-5 flex justify-center p-7'>

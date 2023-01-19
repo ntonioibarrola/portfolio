@@ -2,6 +2,11 @@ import { FC, Fragment, ReactElement, useState } from 'react';
 import LinkIcon from '../assets/projects-link-icon';
 import GitHubIcon from '../assets/projects-github-icon';
 import FigmaIcon from '../assets/projects-figma-icon';
+import SpotifyCover from '../assets/projects-spotify-cover.png';
+import SpotifyPreview from '../assets/projects-spotify-preview.gif';
+import TasselCover from '../assets/projects-tassel-cover.png';
+import Ez3dCover from '../assets/projects-ez3d-cover.png';
+import Ez3dPreview from '../assets/projects-ez3d-preview.gif';
 import Tooltip from './Tooltip';
 
 const ProjectCover: FC<{ type: 'cover' | 'preview'; source: string; hasPreview?: boolean }> = ({
@@ -54,8 +59,8 @@ interface Project {
 const projects: Project[] = [
   {
     name: 'Spotify Music Player',
-    cover: <ProjectCover type='cover' source='src/assets/projects-spotify-cover.png' hasPreview />,
-    preview: <ProjectCover type='preview' source='src/assets/projects-spotify-preview.gif' />,
+    cover: <ProjectCover type='cover' source={SpotifyCover} hasPreview />,
+    preview: <ProjectCover type='preview' source={SpotifyPreview} />,
     stack: ['React JS', 'TypeScript', 'TailwindCSS', 'Next JS', 'NextAuth JS', 'Spotify API'],
     description:
       'An interactive, music player based on the Spotify Web API. It features user authentication through your own Spotify account, an interface for viewing your created playlists and saved songs, and an audio player for playing or pausing music and adjusting the volume.',
@@ -74,7 +79,7 @@ const projects: Project[] = [
   },
   {
     name: 'Tassel',
-    cover: <ProjectCover type='cover' source='src/assets/projects-tassel-cover.png' />,
+    cover: <ProjectCover type='cover' source={TasselCover} />,
     preview: undefined,
     stack: ['React JS', 'JavaScript', 'CSS', 'Material UI', 'Express JS', 'PostgreSQL'],
     description:
@@ -94,8 +99,8 @@ const projects: Project[] = [
   },
   {
     name: 'EZ3D',
-    cover: <ProjectCover type='cover' source='src/assets/projects-ez3d-cover.png' hasPreview />,
-    preview: <ProjectCover type='preview' source='src/assets/projects-ez3d-preview.gif' />,
+    cover: <ProjectCover type='cover' source={Ez3dCover} hasPreview />,
+    preview: <ProjectCover type='preview' source={Ez3dPreview} />,
     stack: ['React JS', 'JavaScript', 'CSS', 'Three JS', 'React Three Fiber'],
     description:
       'A lightweight, computer-aided design (CAD) web application that provides an interface for showcasing and manipulating 3D graphics, which include primitives, lights, and shadows. It utilizes React to encapsulate the app within the browser without having to download it externally.',

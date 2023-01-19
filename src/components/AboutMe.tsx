@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import BackgroundImage from '../assets/about-background.jpg';
+import ProfileImage from '../assets/about-profile.png';
 
 const AboutMe: FC = () => {
   return (
@@ -7,11 +9,11 @@ const AboutMe: FC = () => {
         <div className='group relative grid aspect-[1/1.175] h-auto w-[250px] items-end overflow-hidden rounded-[0_0_100vw_100vw] transition-transform duration-popup ease-popup hover:scale-110'>
           <img
             className='relative aspect-square h-[250px] w-[250px] rounded-full object-cover'
-            src='src/assets/about-image.jpg'
+            src={BackgroundImage}
           />
           <img
             className=' absolute left-4 h-[250px] w-auto scale-[1.2] object-cover transition-transform duration-300 ease-popup group-hover:-translate-y-6'
-            src='src/assets/about-profile.png'
+            src={ProfileImage}
           />
         </div>
       </div>
