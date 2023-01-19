@@ -2,6 +2,7 @@ import { FC, Fragment, ReactElement, useState } from 'react';
 import LinkIcon from '../assets/projects-link-icon';
 import GitHubIcon from '../assets/projects-github-icon';
 import FigmaIcon from '../assets/projects-figma-icon';
+import StaticOverlay from '../assets/projects-static-overlay.gif';
 import SpotifyCover from '../assets/projects-spotify-cover.png';
 import SpotifyPreview from '../assets/projects-spotify-preview.gif';
 import TasselCover from '../assets/projects-tassel-cover.png';
@@ -121,21 +122,32 @@ const projects: Project[] = [
 
 const MyProjects: FC = () => {
   const [projectIndex, setProjectIndex] = useState<number>(0);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const handlePreviousClick = () => {
+  const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const handlePreviousClick = async () => {
     if (projectIndex === 0) return;
     setProjectIndex((currentIndex) => currentIndex - 1);
+
+    setIsLoading(true);
+    await delay(300);
+    setIsLoading(false);
   };
 
-  const handleNextClick = () => {
+  const handleNextClick = async () => {
     if (projectIndex === projects.length - 1) return;
     setProjectIndex((currentIndex) => currentIndex + 1);
+
+    setIsLoading(true);
+    await delay(300);
+    setIsLoading(false);
   };
 
   return (
     <div className='h-full w-full'>
       <div className='group relative h-80 w-full overflow-y-hidden border-b-1 border-solid border-gray-200'>
-        <div className='absolute z-10 flex h-auto w-full animate-crt items-center justify-between bg-[#00000095] px-2 py-1 font-w95fa text-sm text-white'>
+        <div className='absolute z-30 flex h-auto w-full animate-crt items-center justify-between bg-[#00000095] px-2 py-1 font-w95fa text-sm text-white'>
           <div>{projects[projectIndex].name}</div>
           <div className='relative -top-[1px] select-none space-x-2'>
             <span
@@ -160,11 +172,14 @@ const MyProjects: FC = () => {
             </span>
           </div>
         </div>
+        {isLoading && (
+          <img className='absolute z-10 h-full w-full object-cover' src={StaticOverlay} />
+        )}
         {projects[projectIndex].cover}
         {projects[projectIndex].preview}
-        <div className='absolute left-0 top-0 block h-full w-full bg-[url("src/assets/projects-screen-overlay.png")] bg-[length:2px_2px] opacity-20' />
-        <div className='crt-effect absolute left-0 top-0 h-full w-full opacity-20' />
-        <div className='absolute left-0 right-0 top-0 h-4 animate-scanline bg-[linear-gradient(180deg,transparent_0,snow_50%,lightgray_0,transparent)] opacity-10' />
+        <div className='absolute left-0 top-0 z-20 block h-full w-full bg-[url("src/assets/projects-screen-overlay.png")] bg-[length:2px_2px] opacity-20' />
+        <div className='crt-effect absolute left-0 top-0 z-20 h-full w-full opacity-20' />
+        <div className='absolute left-0 right-0 top-0 z-20 h-4 animate-scanline bg-[linear-gradient(180deg,transparent_0,snow_50%,lightgray_0,transparent)] opacity-10' />
       </div>
       <div className='h-[calc(100%-20rem)] w-full space-y-3 p-6'>
         <div className='flex flex-wrap gap-2'>
