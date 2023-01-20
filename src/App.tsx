@@ -4,6 +4,7 @@ import Shortcut from './components/Shortcut';
 import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
 import MyProjects from './components/MyProjects';
+import ContactMe from './components/ContactMe';
 import AboutMeIcon from './assets/about-icon.png';
 import MySkillsIcon from './assets/skills-icon.png';
 import MyProjectsIcon from './assets/projects-icon.png';
@@ -31,7 +32,9 @@ function App() {
             </Window>
           </div>
           <div className='col-start-1 col-end-4 row-start-7 row-end-7'>
-            <Window title={'Contact Me'}>Hello</Window>
+            <Window title={'Contact Me'}>
+              <ContactMe />
+            </Window>
           </div>
         </div>
         <div className='col-start-3 col-end-4 row-start-1 row-end-5 flex justify-end p-7'>

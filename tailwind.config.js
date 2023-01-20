@@ -42,6 +42,7 @@ module.exports = {
       cursor: {
         default: 'url(/src/assets/cursor-default.svg), auto',
         pointer: 'url(/src/assets/cursor-pointer.svg), pointer',
+        text: 'url(/src/assets/cursor-text.svg), text',
       },
       fontFamily: {
         sysfont: ['FA Sysfont C', 'sans-serif'],
