@@ -10,10 +10,11 @@ module.exports = {
   theme: {
     extend: {
       borderRadius: {
-        retro: '0.175rem',
+        retro: '0.25rem',
       },
       borderWidth: {
         1: '1px',
+        3: '3px',
         5: '5px',
       },
       colors: {
@@ -47,11 +48,15 @@ module.exports = {
       fontFamily: {
         sysfont: ['FA Sysfont C', 'sans-serif'],
         w95fa: ['W95FA', 'sans-serif'],
+        fredoka: ['Fredoka', 'sans-serif'],
       },
       gridRowEnd: {
         7: '7',
         8: '8',
         9: '9',
+      },
+      screens: {
+        desktop: '1280px',
       },
       animation: {
         crt: 'crt 0.15s infinite',

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,20 +19,161 @@
 }
 
 body {
-  font-family: 'FA Sysfont C', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Fredoka', 'FA Sysfont C', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-*,
-*::before,
-*::after {
-  image-rendering: pixelated;
 }
 
 .crt-effect {
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
     linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   background-size: 100% 3px, 2px 100%;
+}
+
+.active {
+  position: relative;
+}
+
+.active.my-skills::before,
+.active.my-projects::before,
+.active.contact-me::before {
+  content: '';
+  z-index: 31;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.active.about-me::after,
+.active.my-skills::after,
+.active.my-projects::after,
+.active.contact-me::after {
+  content: '';
+  z-index: 31;
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.active.my-skills a::before,
+.active.my-projects a::before,
+.active.contact-me a::before {
+  content: '';
+  z-index: 32;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  border: solid 3px black;
+  border-radius: 0.75rem;
+  background-color: #fa6a0a;
+  pointer-events: none;
+}
+
+.active.about-me a::after,
+.active.my-skills a::after,
+.active.my-projects a::after,
+.active.contact-me a::after {
+  content: '';
+  z-index: 32;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  border: solid 3px black;
+  border-radius: 0.75rem;
+  pointer-events: none;
+}
+
+.active.my-skills span::before,
+.active.my-projects span::before,
+.active.contact-me span::before {
+  content: '';
+  z-index: 33;
+  position: absolute;
+  bottom: 3px;
+  left: -23px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 0.55rem 0;
+  pointer-events: none;
+}
+
+.active.about-me span::after,
+.active.my-skills span::after,
+.active.my-projects span::after,
+.active.contact-me span::after {
+  content: '';
+  z-index: 33;
+  position: absolute;
+  bottom: 3px;
+  right: -23px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 0 0 0.55rem;
+  pointer-events: none;
+}
+
+.active.about-me::after,
+.active.about-me::before {
+  background-color: #ff7a9b;
+}
+
+.active.my-skills::after,
+.active.my-skills::before {
+  background-color: #fa6a0a;
+}
+
+.active.my-projects::after,
+.active.my-projects::before {
+  background-color: #f9a31b;
+}
+
+.active.contact-me::after,
+.active.contact-me::before {
+  background-color: #1884db;
+}
+
+.active.about-me a::after,
+.active.about-me span::after {
+  background-color: #fa6a0a;
+}
+
+.active.my-skills a::after,
+.active.my-skills span::after {
+  background-color: #f9a31b;
+}
+
+.active.my-projects a::after,
+.active.my-projects span::after {
+  background-color: #1884db;
+}
+
+.active.contact-me a::after,
+.active.contact-me span::after {
+  background-color: rgb(235 235 235);
+}
+
+.active.my-skills a::before,
+.active.my-skills span::before {
+  background-color: #ff7a9b;
+}
+
+.active.my-projects a::before,
+.active.my-projects span::before {
+  background-color: #fa6a0a;
+}
+
+.active.contact-me a::before,
+.active.contact-me span::before {
+  background-color: #f9a31b;
 }

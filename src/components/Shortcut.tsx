@@ -10,7 +10,7 @@ const Shortcut: FC<{ children: ReactNode; source: string }> = ({ children, sourc
       >
         <img src={source} />
       </div>
-      <div className='select-none rounded-retro bg-froly-100 px-2 font-w95fa leading-tight tracking-wide group-hover:cursor-pointer'>
+      <div className='select-none rounded-retro bg-froly-100 px-2 text-center font-w95fa text-sm leading-tight tracking-wide group-hover:cursor-pointer sm:text-base'>
         {children}
       </div>
     </div>
