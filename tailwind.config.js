@@ -17,7 +17,32 @@ module.exports = {
         3: '3px',
         5: '5px',
       },
+      boxShadow: {
+        window: '8px 8px 8px rgba(0, 0, 0, 0.1)',
+      },
       colors: {
+        blaze: {
+          100: '',
+          200: '#FA6A0A',
+        },
+        dandelion: {
+          100: '',
+          200: '#F9A31B',
+        },
+        froly: {
+          100: '#FABFCD',
+          200: '#EE7293',
+        },
+        independence: {
+          100: '#7d83a3',
+          200: '#434968',
+          300: '#2c3046',
+          400: '#1f2025',
+        },
+        portage: {
+          100: '#7CA1F0',
+          200: '#59669e',
+        },
         periwinkle: {
           100: '#7DADE4',
           200: '#4550AE',
@@ -34,11 +59,6 @@ module.exports = {
           300: '#4550AE',
         },
         carnation: '#F55261',
-        dandelion: '#FFC328',
-        froly: {
-          100: '#FABFCD',
-          200: '#EE7293',
-        },
       },
       cursor: {
         default: 'url(/src/assets/cursor-default.svg), auto',
@@ -48,7 +68,7 @@ module.exports = {
       fontFamily: {
         sysfont: ['FA Sysfont C', 'sans-serif'],
         w95fa: ['W95FA', 'sans-serif'],
-        fredoka: ['Fredoka', 'sans-serif'],
+        sfmono: ['SF Mono', 'sans-serif'],
       },
       gridRowEnd: {
         7: '7',
@@ -64,6 +84,7 @@ module.exports = {
         pop: 'pop 200ms ease',
         wave: 'wave 2s infinite',
         squiggle: 'squiggle 0.25s steps(2) infinite',
+        typing: 'typing 0.5s steps(30, end)',
       },
       keyframes: {
         crt: {
@@ -174,6 +195,10 @@ module.exports = {
         squiggle: {
           '0%': { transform: 'none' },
           '100%': { transform: 'skew(1.5deg,.2deg) translate(0,-1.5px)' },
+        },
+        typing: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
         },
       },
       transitionTimingFunction: {

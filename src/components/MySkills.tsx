@@ -14,7 +14,7 @@ import TypeScriptIcon from '../assets/skills-typescript-icon';
 
 const MySkills: FC = () => {
   return (
-    <div className='grid h-full w-full grid-cols-[1fr,_1fr,_1fr,_1fr] grid-rows-[1fr,_1fr,_1fr] gap-2 p-5 font-w95fa text-sm'>
+    <div className='grid h-full w-full grid-cols-[1fr,_1fr,_1fr,_1fr] grid-rows-[1fr,_1fr,_1fr] gap-2 p-5 text-xs text-white'>
       <div className='group col-start-1 col-end-1 row-start-1 row-end-1 flex flex-col items-center justify-center gap-y-1'>
         <div className='flex h-12 w-12 items-center justify-center rounded-retro group-hover:animate-bounce'>
           <ReactIcon />

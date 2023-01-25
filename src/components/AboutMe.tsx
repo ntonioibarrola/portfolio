@@ -6,18 +6,18 @@ const AboutMe: FC = () => {
   return (
     <div className='h-full w-full space-y-8 overflow-y-scroll px-8 pt-5 pb-10'>
       <div className='flex h-auto w-full items-center justify-center'>
-        <div className='group relative grid aspect-[1/1.175] h-auto w-[225px] items-end overflow-hidden rounded-[0_0_100vw_100vw] transition-transform duration-popup ease-popup hover:scale-110'>
+        <div className='group relative grid aspect-[1/1.175] h-auto w-[250px] items-end justify-center overflow-hidden rounded-[0_0_100vw_100vw] transition-transform duration-popup ease-popup hover:scale-110'>
           <img
-            className='relative aspect-square h-[225px] w-[225px] rounded-full object-cover'
+            className='relative bottom-[4px] aspect-square h-[calc(250px-4px)] w-[calc(250px-4px)] rounded-full border-4 border-solid border-[#1f2025] object-cover outline outline-2 outline-froly-200'
             src={BackgroundImage}
           />
           <img
-            className=' absolute left-4 h-[225px] w-auto scale-[1.2] object-cover transition-transform duration-300 ease-popup group-hover:-translate-y-6'
+            className=' absolute bottom-[2px] left-4 h-[calc(250px-4px)] w-auto scale-[1.2] object-cover transition-transform duration-300 ease-popup group-hover:-translate-y-6'
             src={ProfileImage}
           />
         </div>
       </div>
-      <div className='h-auto w-full text-justify font-fredoka font-medium'>
+      <div className='h-auto w-full text-justify text-sm font-light text-white'>
         <p>
           Hello! I'm{' '}
           <span className='inline-block font-semibold text-froly-200 hover:animate-squiggle'>

@@ -177,7 +177,7 @@ const MyProjects: FC = () => {
         {isLoading && <div className='absolute h-full w-full bg-white' />}
         {isLoading && <img className='absolute h-full w-full object-cover' src={StaticOverlay} />}
         <div className='absolute left-0 top-0 block h-full w-full bg-[url("src/assets/projects-screen-overlay.png")] bg-[length:2px_2px] opacity-20' />
-        <div className='crt-effect absolute left-0 top-0 h-full w-full opacity-20' />
+        <div className='crt absolute left-0 top-0 h-full w-full opacity-20' />
         <div className='absolute left-0 right-0 top-0 h-4 animate-scanline bg-[linear-gradient(180deg,transparent_0,snow_50%,lightgray_0,transparent)] opacity-10' />
       </div>
       <div className='h-[calc(100%-20rem)] w-full space-y-3 p-6'>
